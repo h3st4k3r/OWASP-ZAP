@@ -30,3 +30,28 @@ Antes de ejecutar el script, edita los siguientes parámetros:
    ```bash
    python3 zap_api_scan.py
    ```
+
+# OWASP ZAP AUTO
+
+Qué hace el script de automatización (owaspzap-auto.py):
+
+- Instala Docker y los requisitos necesarios.
+- Configura y arranca OWASP ZAP en un contenedor Docker.
+- Realiza un Spider y Active Scan para cada dominio especificado.
+- Genera informes detallados en formato HTML para cada dominio en el directorio actual.
+- Limpia el contenedor de Docker al finalizar.
+
+## Uso
+
+1. **Ejecutar el script**:
+```bash
+./owaspzap-auto.py domain.com
+./owaspzap-auto.py domain1.com domain2.com
+```
+
+2. **Ayuda**:
+```bash
+./owaspzap-auto.py --help
+```
+
+
